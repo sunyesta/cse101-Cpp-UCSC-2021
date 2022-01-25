@@ -3,23 +3,24 @@
 
 #include <string>
 
+#include "Node.h"
 using namespace std;
 
-struct Node{
-      string word;
-      int frequency;
-      Node *next;
-};
 
 
 class LinkedList{
   private:
-    Node *head;
+    Node *_head;
     void addNode(string, Node*);
+    void bubbleSort(Node*);
+    
   public:
     LinkedList();
     void insert(string);
+    string findnthMostFrequentWord(int);
+    void bubbleSort();
     void print();
+    void deleteList();
   
   
 };

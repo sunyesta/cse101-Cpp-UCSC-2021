@@ -1,0 +1,20 @@
+Start with 0.0 points.
+=================================
+Just testing very simple input that can find it vertices are present
+Passed Tests/simple-input.txt
+
+=============================================
+Score is now
+2.0
+Solution has failed on an input. This input is given in your solution folder.
+An example output is also given in your directory.Messages from verifier script follows. This should give some description of why your solution is incorrect.
+====================================
+For input: Brad_Pitt Amitabh_Bachchan
+Your output has a path length of 8. But there is a shorter path, given below.
+Brad_Pitt -(Taming_the_Beasts:_How_to_Drive,_Fire_and_Shoot_Inside_a_30-Ton_Tank)- Michael_Peña -(Making_of_an_Ant-Sized_Heist:_A_How-To_Guide)- T.I. -(T.I._Feat._London_Jae,_Translee,_Charlie_Wilson,_B.o.B:_Us_or_Else)- B.o.B. -(YC:_Racks_(Remix))- Nelly -(Ali_&_Gipp_Feat._Nelly:_N'_Da_Paint)- Ali -(Khaidi_No._150)- Chiranjeevi -(Sye_Raa_Narasimha_Reddy)- Amitabh_Bachchan 
+
+FAIL
+
+===========================================
+Final score
+2

@@ -1,5 +1,5 @@
 CC = g++
-CFLAGS = -std=c++11 -O2 -Wall -g
+CFLAGS = -std=c++17 -O2 -Wall -g
 SRC = $(wildcard ./src/*.cpp)
 OBJ = $(SRC: .cpp = *.o)
 EXECBIN = bard
@@ -9,10 +9,13 @@ EXECBIN = bard
 all: $(EXECBIN)
 
 clean:
-	rm -f $(OBJ) $(EXECBIN)
+	rm -f $(EXECBIN) *.o
 	
 $(EXECBIN): $(OBJ)
 	$(CC) $(CFLAGS) $(SRC) -o $(EXECBIN)
 
 %.o: %.c
 	$(CC) $(CFLAGS)-c $<
+	
+valgrind: clean all
+	valgrind --leak-check=full ./bard simple-input.txt myOutput.txt 

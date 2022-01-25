@@ -6,15 +6,16 @@
 using namespace std;
 
 
-
-
 class Node{
   public:
-    string data;
+    string word;
+    int frequency;
     Node *next;
     
-    Node(string, Node*);
-  
+    Node(string);
+    void deleteNode();
+    void swapData(Node*);
+    void print();
   
 };
 
